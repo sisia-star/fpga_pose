@@ -1,0 +1,22 @@
+{
+  "mediapipe_tasks_vision": "1.0.1",
+  "model": "pose_landmarker_lite/float16/1",
+  "assets": {
+    "vision_bundle.mjs": {
+      "bytes": 155439,
+      "sha256": "d885630c297c0b20b1fe86096cb06291c4c8080876f27852e724f24ac603713f"
+    },
+    "vision_wasm_internal.js": {
+      "bytes": 323377,
+      "sha256": "e170ee67dd4e16c1a6fcd8840a206687e5a59b22c20e4a902bc445b095454d73"
+    },
+    "vision_wasm_internal.wasm": {
+      "bytes": 11756954,
+      "sha256": "8da277a733926eacd0474b8704b36742d6ec3231c57a860c5b889dff8f1df886"
+    },
+    "pose_landmarker_lite.task": {
+      "bytes": 5777746,
+      "sha256": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "sourceHash": "2325fc89aec33eaa38c1965baef54722b0fa9c8891537b15affb40fa3aa654ca",
+  "totalSamples": 5016,
+  "sourceClassCounts": {
+    "birddog": 965,
+    "dart": 357,
+    "deadbug": 492,
+    "glutebridge": 479,
+    "high plank": 579,
+    "knee plank": 276,
+    "none": 622,
+    "plank": 830,
+    "side plank": 416
+  },
+  "models": {
+    "birddog": {
+      "rows": 1024,
+      "discarded": 659,
+      "invalidCoreCoordinates": 659,
+      "exactFeatureDuplicates": 0,
+      "total": 869,
+      "correct": 713,
+      "rejected": 115,
+      "accuracy": 0.8204833141542003,
+      "confusionMatrix": [
+        [
+          634,
+          12,
+          59
+        ],
+        [
+          29,
+          79,
+          56
+        ]
+      ],
+      "positiveSamples": 822
+    },
+    "high_plank": {
+      "rows": 970,
+      "discarded": 196,
+      "invalidCoreCoordinates": 196,
+      "exactFeatureDuplicates": 0,
+      "total": 961,
+      "correct": 805,
+      "rejected": 94,
+      "accuracy": 0.8376690946930281,
+      "confusionMatrix": [
+        [
+          723,
+          54,
+          70
+        ],
+        [
+          8,
+          82,
+          24
+        ]
+      ],
+      "positiveSamples": 572
+    },
+    "knee_plank": {
+      "rows": 732,
+      "discarded": 196,
+      "invalidCoreCoordinates": 196,
+      "exactFeatureDuplicates": 0,
+      "total": 961,
+      "correct": 834,
+      "rejected": 65,
+      "accuracy": 0.8678459937565036,
+      "confusionMatrix": [
+        [
+          799,
+          52,
+          55
+        ],
+        [
+          10,
+          35,
+          10
+        ]
+      ],
+      "positiveSamples": 275
+    }
+  }
+}

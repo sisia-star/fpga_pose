@@ -1,0 +1,188 @@
+{
+  "project": "fpga_pose_parallel_ai_20261028",
+  "version": "parallel-ai-conv-20261028",
+  "baseline_preserved": "fpga_pose_training_20261025",
+  "board_project": "/home/xilinx/jupyter_notebooks/fpga_pose_parallel_ai_20261028",
+  "windows_project": "D:\\FPGA_AI1\\fpga_pose_parallel_ai_20261028",
+  "architecture": {
+    "PL": [
+      "2x2 box mean and half-size image processing",
+      "MediaPipe trained landmark Conv2D weighted sum, 36 signed16 MAC lanes",
+      "99D fixed point distance, 32 lanes, stable top5"
+    ],
+    "PYNQ_PS": [
+      "USB camera capture and JPEG/HTTP",
+      "feature/input quantization and PL DMA/MMIO",
+      "PL output dequantization and landmark bias",
+      "KNN voting/rejection, repetition/hold timer, DeepSeek summary relay"
+    ],
+    "Windows": [
+      "MediaPipe detector and pruned landmark prefix",
+      "heatmap/ROI decoding to 33 landmarks",
+      "browser UI and voice",
+      "DeepSeek internet helper"
+    ]
+  },
+  "hardware": {
+    "device": "xc7z020clg400-1",
+    "design": "pose_system_wrapper",
+    "stage": "post-route",
+    "resources": {
+      "LUT": {
+        "used": 8130.0,
+        "available": 53200.0,
+        "percent": 15.28
+      },
+      "FF": {
+        "used": 7875.0,
+        "available": 106400.0,
+        "percent": 7.4
+      },
+      "Slice": {
+        "used": 3196.0,
+        "available": 13300.0,
+        "percent": 24.03
+      },
+      "BRAM_36Kb_equivalent": {
+        "used": 91.0,
+        "available": 140.0,
+        "percent": 65.0
+      },
+      "DSP": {
+        "used": 132.0,
+        "available": 220.0,
+        "percent": 60.0
+      },
+      "BUFGCTRL": {
+        "used": 1.0,
+        "available": 32.0,
+        "percent": 3.13
+      }
+    },
+    "timing": {
+      "WNS_ns": 0.434,
+      "TNS_ns": 0.0,
+      "WHS_ns": 0.013,
+      "THS_ns": 0.0,
+      "WPWS_ns": 3.75,
+      "TPWS_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "hold_failing_endpoints": 0,
+      "pulse_failing_endpoints": 0,
+      "clock_period_ns": 10,
+      "configured_frequency_mhz": 100,
+      "all_user_constraints_met": true
+    },
+    "drc": {
+      "Error": 0,
+      "Warning": 305,
+      "Advisory": 8
+    },
+    "build": "D:\\FPGA_AI1\\fpga_pose_parallel_ai_20261028\\build\\run_20261028_203021"
+  },
+  "verification": {
+    "python_tests": 108,
+    "javascript_tests": 47,
+    "RTL": "Real 36x768 signed MAC plus image and parallel-distance Vivado simulation passed",
+    "exact_integer_cases": 3,
+    "outputs_per_case": 195,
+    "public_sample_hybrid": {
+      "test_scope": "Public reference image through real PC-prefix/board-convolution RPC. No exercise session or counter started. Fresh camera sequence is a protocol freshness check, not a claim that reference image came from live camera.",
+      "actual_pl": true,
+      "points": 33,
+      "max_abs_landmark_field_difference_vs_cpu_same_source": 0.00014205740600892192,
+      "whole_rpc_ms": 100.36289999698056,
+      "convolution": {
+        "backend": "fpga-convolution",
+        "hardware_completed": true,
+        "completed_tiles": 6,
+        "hardware_count": 12,
+        "cycles": 787588,
+        "full_call_ms": 13.59989500087977,
+        "calls": 2,
+        "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+      },
+      "live_camera_advanced": true,
+      "cpu_reference_scope": "Original full landmark model includes unused branches; no end-to-end speedup ratio is inferred.",
+      "deepseek_relay_connected": true,
+      "conv_relay_connected": true,
+      "accuracy_limit": "One public sample numerical check, not eight-exercise human accuracy validation."
+    },
+    "board_runtime": {
+      "old_project_hashes_unchanged": true,
+      "notebook_cells": 3,
+      "notebook_outputs": [
+        "文件检查通过｜卷积版｜8 项运动\n",
+        "FPGA：36 路卷积＋32 路距离｜摄像头：运行\nhttp://192.168.2.99:8081/?v=parallel-ai-conv-20261028\n",
+        "DeepSeek 助手：已连接\n网页 AI 点评：未启用\n电脑卷积助手：已连接\n"
+      ],
+      "version": "parallel-ai-conv-20261028",
+      "camera_running": true,
+      "convolution": {
+        "ready": true,
+        "self_test_passed": true,
+        "error": null,
+        "lanes": 36,
+        "features": 768,
+        "outputs": 195,
+        "calls": 2,
+        "last": {
+          "backend": "fpga-convolution",
+          "hardware_completed": true,
+          "completed_tiles": 6,
+          "hardware_count": 12,
+          "cycles": 787588,
+          "full_call_ms": 13.59989500087977,
+          "calls": 2,
+          "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+        },
+        "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e",
+        "operation": "MediaPipe Lite trained Conv2D(2x2x192 ->195); CPU adds bias after dequantization"
+      },
+      "image": {
+        "ready": true,
+        "backend": "fpga",
+        "pixel_pipeline": "fpga-2x2-box-half-bgrx-v2",
+        "self_test_passed": true,
+        "self_test_sha256": "affa10d59fb1f01d62fa2e6336c0b5647d349aab986f4f2da3de0d046bce8752",
+        "completed_count": 1514,
+        "last_cycles": 258619,
+        "last_processing_ms": 60.8601109997835,
+        "input_width": 640,
+        "input_height": 360,
+        "width": 320,
+        "height": 180,
+        "hardware_id": "0x50494D32",
+        "error": null,
+        "max_width": 1280,
+        "max_height": 720,
+        "timing_scope": "pack + DMA + PL + unpack, excluding capture/JPEG/network"
+      },
+      "pose_relay": {
+        "backend": "mediapipe-lite-split-conv",
+        "relay_connected": true,
+        "busy": false,
+        "error": null,
+        "model": "MediaPipe Lite 33 points"
+      },
+      "deepseek_relay_connected": true,
+      "webpage_title_verified": true,
+      "hardware": {
+        "parallel_lanes": 32,
+        "bitstream_sha256": "64bcd973ed2f3535039bc3145ba3968fd73d79ac389beb27e83ba473b559c9fa",
+        "hwh_sha256": "27ff7e8dc1f73ae30989c2d2527585b643540803e80fb75bee92c6e61e783900",
+        "fclk_mhz": null
+      }
+    }
+  },
+  "limitations": [
+    "Only the trained landmark output convolution is on PL; detector and remaining network remain on Windows.",
+    "Quantized split and ROI/tracking postprocessing require human accuracy retest for all exercises.",
+    "No end-to-end speedup ratio established; network and DMA are included in measured public-sample RPC.",
+    "DeepSeek connection verified; no paid AI request or human repetition session started during deployment."
+  ],
+  "backups": {
+    "windows": "D:\\FPGA_AI1\\backups\\parallel_before_mediapipe_conv_20261028.zip",
+    "board": "/home/xilinx/jupyter_notebooks/fpga_pose_backups/parallel_before_mediapipe_conv_20261028.zip"
+  }
+}

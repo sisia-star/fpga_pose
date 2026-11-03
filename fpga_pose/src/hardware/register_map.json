@@ -1,0 +1,151 @@
+{
+  "schema": "pose-rtl-register-map-v1",
+  "vlnv": "pose.local:pose:pose_knn_distance_axi:1.0",
+  "instance": "pose_distance_0",
+  "control_interface": "S_AXI",
+  "data_width": 32,
+  "address_width": 12,
+  "byte_order": "little-endian",
+  "max_rows": 1024,
+  "dims": 99,
+  "quantization_scale": 2048,
+  "feature_format": "signed int16 Q4.11",
+  "result_format": "uint64 raw sum of squared quantized differences",
+  "rms_squared_divisor": 415236096,
+  "registers": [
+    {
+      "name": "CTRL",
+      "offset": 0,
+      "offset_hex": "0x0",
+      "access": "RW",
+      "description": "Write bit0=1 starts. Read bits: busy0/done1/idle2/fault3."
+    },
+    {
+      "name": "ROW_COUNT",
+      "offset": 4,
+      "offset_hex": "0x4",
+      "access": "RW",
+      "description": "Training rows: valid start requires 1..1024."
+    },
+    {
+      "name": "TRAIN_ADDR",
+      "offset": 8,
+      "offset_hex": "0x8",
+      "access": "RW",
+      "description": "Row-major int16 word index, range 0..101375."
+    },
+    {
+      "name": "TRAIN_DATA",
+      "offset": 12,
+      "offset_hex": "0xc",
+      "access": "WO",
+      "description": "Write low16 signed two-complement feature; low-byte write strobes apply; auto-increment address once."
+    },
+    {
+      "name": "QUERY_ADDR",
+      "offset": 16,
+      "offset_hex": "0x10",
+      "access": "RW",
+      "description": "Feature index 0..98."
+    },
+    {
+      "name": "QUERY_DATA",
+      "offset": 20,
+      "offset_hex": "0x14",
+      "access": "WO",
+      "description": "Write low16 feature; low-byte write strobes apply; auto-increment address once."
+    },
+    {
+      "name": "DIST_ADDR",
+      "offset": 24,
+      "offset_hex": "0x18",
+      "access": "RW",
+      "description": "Output row index 0..1023."
+    },
+    {
+      "name": "DIST_LO",
+      "offset": 28,
+      "offset_hex": "0x1c",
+      "access": "RO",
+      "description": "Uint64 result bits31..0; no address increment."
+    },
+    {
+      "name": "DIST_HI",
+      "offset": 32,
+      "offset_hex": "0x20",
+      "access": "RO",
+      "description": "Uint64 result bits63..32; increment DIST_ADDR once on RVALID && RREADY."
+    },
+    {
+      "name": "ID",
+      "offset": 36,
+      "offset_hex": "0x24",
+      "access": "RO",
+      "description": "Constant 0x504b4e31."
+    },
+    {
+      "name": "MAX_ROWS",
+      "offset": 40,
+      "offset_hex": "0x28",
+      "access": "RO",
+      "description": "Constant 1024."
+    },
+    {
+      "name": "COMPLETED_COUNT",
+      "offset": 44,
+      "offset_hex": "0x2c",
+      "access": "RO",
+      "description": "Real successful PL completion count; uint32 wraparound."
+    },
+    {
+      "name": "LAST_CYCLES",
+      "offset": 48,
+      "offset_hex": "0x30",
+      "access": "RO",
+      "description": "FCLK cycles of most recently completed compute pass."
+    },
+    {
+      "name": "ERROR",
+      "offset": 52,
+      "offset_hex": "0x34",
+      "access": "RO",
+      "description": "Latched error code; valid start clears."
+    },
+    {
+      "name": "DIMS",
+      "offset": 56,
+      "offset_hex": "0x38",
+      "access": "RO",
+      "description": "Constant 99."
+    },
+    {
+      "name": "SCALE",
+      "offset": 60,
+      "offset_hex": "0x3c",
+      "access": "RO",
+      "description": "Constant 2048."
+    }
+  ],
+  "error_codes": {
+    "0": "OK",
+    "1": "busy write/start rejected",
+    "2": "invalid ROW_COUNT at start",
+    "3": "TRAIN_ADDR out of range",
+    "4": "QUERY_ADDR out of range",
+    "5": "DIST_ADDR out of range",
+    "6": "invalid/read-only/write-only register access",
+    "7": "unaligned AXI byte address"
+  },
+  "responses": {
+    "OKAY": 0,
+    "SLVERR": 2
+  },
+  "notes": [
+    "This JSON describes a software contract, not a generated HWH or evidence of a built FPGA.",
+    "AW/W are independently held and committed once both accepted; BVALID and RVALID stay asserted until handshake.",
+    "Busy nonzero-strobe writes are rejected without modifying model/query RAM; fault stays latched until valid start.",
+    "DONE is not read-cleared; a non-busy start request clears DONE, and a valid start also clears FAULT and ERROR.",
+    "Large RAM arrays are not reset; upload a complete model and query before inference.",
+    "DIST_HI increments only after successful read handshake; last valid result can advance pointer to MAX_ROWS; extra read is rejected."
+  ]
+}

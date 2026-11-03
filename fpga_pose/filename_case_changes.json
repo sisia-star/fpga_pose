@@ -1,0 +1,30 @@
+[
+    {
+        "old":  "CONV_VERSION.json",
+        "new":  "conv_version.json"
+    },
+    {
+        "old":  "MEDIAPIPE_LICENSE.txt",
+        "new":  "mediapipe_license.txt"
+    },
+    {
+        "old":  "PARALLEL_VERSION.json",
+        "new":  "parallel_version.json"
+    },
+    {
+        "old":  "README_LATEST.md",
+        "new":  "readme_latest.md"
+    },
+    {
+        "old":  "data\\README.md",
+        "new":  "data\\readme.md"
+    },
+    {
+        "old":  "hardware\\REGISTER_MAP.md",
+        "new":  "hardware\\register_map.md"
+    },
+    {
+        "old":  "reports_conv\\实测指标.md",
+        "new":  "reports_conv\\measured_metrics.md"
+    }
+]

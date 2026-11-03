@@ -1,0 +1,68 @@
+{
+  "actual_pl": true,
+  "trained_model_weights": true,
+  "checks": [
+    {
+      "exact_integer_match": true,
+      "evidence": {
+        "backend": "fpga-convolution",
+        "hardware_completed": true,
+        "completed_tiles": 6,
+        "hardware_count": 12,
+        "cycles": 516866,
+        "full_call_ms": 9.997470999223879,
+        "calls": 2,
+        "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+      }
+    },
+    {
+      "exact_integer_match": true,
+      "evidence": {
+        "backend": "fpga-convolution",
+        "hardware_completed": true,
+        "completed_tiles": 6,
+        "hardware_count": 18,
+        "cycles": 515875,
+        "full_call_ms": 10.043907999715884,
+        "calls": 3,
+        "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+      }
+    },
+    {
+      "exact_integer_match": true,
+      "evidence": {
+        "backend": "fpga-convolution",
+        "hardware_completed": true,
+        "completed_tiles": 6,
+        "hardware_count": 24,
+        "cycles": 513659,
+        "full_call_ms": 10.19891100077075,
+        "calls": 4,
+        "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+      }
+    }
+  ],
+  "startup_self_test": true,
+  "hardware": {
+    "ready": true,
+    "self_test_passed": true,
+    "error": null,
+    "lanes": 36,
+    "features": 768,
+    "outputs": 195,
+    "calls": 4,
+    "last": {
+      "backend": "fpga-convolution",
+      "hardware_completed": true,
+      "completed_tiles": 6,
+      "hardware_count": 24,
+      "cycles": 513659,
+      "full_call_ms": 10.19891100077075,
+      "calls": 4,
+      "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+    },
+    "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e",
+    "operation": "MediaPipe Lite trained Conv2D(2x2x192 ->195); CPU adds bias after dequantization"
+  },
+  "note": "Exact integer MAC verification, not camera accuracy."
+}

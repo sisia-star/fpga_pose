@@ -1,0 +1,53 @@
+{
+  "jumping_jacks": {
+    "exercise_id": "jumping_jacks",
+    "name": "开合跳",
+    "start_label": "jumping_jacks_down",
+    "target_label": "jumping_jacks_up"
+  },
+  "pushups": {
+    "exercise_id": "pushups",
+    "name": "俯卧撑",
+    "start_label": "pushups_up",
+    "target_label": "pushups_down"
+  },
+  "situp": {
+    "exercise_id": "situp",
+    "name": "仰卧起坐",
+    "start_label": "situp_down",
+    "target_label": "situp_up"
+  },
+  "pullups": {
+    "exercise_id": "pullups",
+    "name": "引体向上",
+    "start_label": "pullups_down",
+    "target_label": "pullups_up"
+  },
+  "squats": {
+    "exercise_id": "squats",
+    "name": "深蹲",
+    "start_label": "squats_up",
+    "target_label": "squats_down"
+  },
+  "birddog": {
+    "exercise_id": "birddog",
+    "name": "鸟狗式",
+    "start_label": "birddog_other",
+    "target_label": "birddog_hold",
+    "mode": "hold"
+  },
+  "high_plank": {
+    "exercise_id": "high_plank",
+    "name": "高位平板支撑",
+    "start_label": "high_plank_other",
+    "target_label": "high_plank_hold",
+    "mode": "hold"
+  },
+  "knee_plank": {
+    "exercise_id": "knee_plank",
+    "name": "跪姿平板支撑",
+    "start_label": "knee_plank_other",
+    "target_label": "knee_plank_hold",
+    "mode": "hold"
+  }
+}

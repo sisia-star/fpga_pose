@@ -1,0 +1,91 @@
+{
+  "schema": "pose-bundled-dataset-manifest-v1",
+  "filename": "archive.zip",
+  "sha256": "03fdb4622e95c33432fd58df6720f200be6d333b1e562ca321ce7b045b6e34cc",
+  "bytes": 1120360,
+  "totalSamples": 1372,
+  "cleanSamples": 1371,
+  "duplicateRowsRemoved": 1,
+  "duplicatePairs": [
+    {
+      "keptSampleId": "208",
+      "removedSampleId": "209",
+      "label": "jumping_jacks_up"
+    }
+  ],
+  "stageCounts": {
+    "jumping_jacks_down": 189,
+    "jumping_jacks_up": 180,
+    "pushups_up": 144,
+    "pushups_down": 102,
+    "situp_down": 102,
+    "situp_up": 99,
+    "pullups_down": 154,
+    "pullups_up": 135,
+    "squats_up": 139,
+    "squats_down": 127
+  },
+  "featureSpec": "image33-hipcenter-pose2d-v1",
+  "coordinateProtocolAssumption": "CSV appears hip-centered with max(2.5*torsoXY,maxRadiusXY)=100. Original coordinate extraction code is not in the archive; camera equivalence requires independent testing.",
+  "videoGroupsAvailable": false,
+  "trainingSeed": 20261012,
+  "validationMethod": "stratified-sample-holdout",
+  "models": {
+    "jumping_jacks": {
+      "classes": [
+        "jumping_jacks_down",
+        "jumping_jacks_up"
+      ],
+      "trainRows": 296,
+      "holdoutSamples": 73,
+      "sampleHoldoutAccuracy": 0.8767123287671232,
+      "sampleHoldoutCoverage": 0.9315068493150684,
+      "independentVideoValidation": false
+    },
+    "pushups": {
+      "classes": [
+        "pushups_up",
+        "pushups_down"
+      ],
+      "trainRows": 198,
+      "holdoutSamples": 48,
+      "sampleHoldoutAccuracy": 0.9166666666666666,
+      "sampleHoldoutCoverage": 1,
+      "independentVideoValidation": false
+    },
+    "situp": {
+      "classes": [
+        "situp_down",
+        "situp_up"
+      ],
+      "trainRows": 162,
+      "holdoutSamples": 39,
+      "sampleHoldoutAccuracy": 0.9743589743589743,
+      "sampleHoldoutCoverage": 1,
+      "independentVideoValidation": false
+    },
+    "pullups": {
+      "classes": [
+        "pullups_down",
+        "pullups_up"
+      ],
+      "trainRows": 232,
+      "holdoutSamples": 57,
+      "sampleHoldoutAccuracy": 0.9122807017543859,
+      "sampleHoldoutCoverage": 0.9473684210526315,
+      "independentVideoValidation": false
+    },
+    "squats": {
+      "classes": [
+        "squats_up",
+        "squats_down"
+      ],
+      "trainRows": 214,
+      "holdoutSamples": 52,
+      "sampleHoldoutAccuracy": 0.9038461538461539,
+      "sampleHoldoutCoverage": 1,
+      "independentVideoValidation": false
+    }
+  },
+  "note": "验证结果仅为分层样本留出；CSV 未提供视频ID、帧号和时间戳，不能代表独立视频或摄像头计数准确率。"
+}

@@ -1,0 +1,1087 @@
+[
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/ai_coach.py",
+        "sha256":  "3689d65ad71a2a161bcb51a8d6379d283edc67723252c281c621d40c0a17c323",
+        "bytes":  20749
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/ai_coach_relay.py",
+        "sha256":  "688eae95d53c1eed3c6abbb45b58d76a1c922999e9f0c38ca4cb9889952c44b2",
+        "bytes":  5826
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/board_manage.py",
+        "sha256":  "e7ad218247c7a49feaf7313a0f216bbf61f6dba198339c77ebe318bf1dccf529",
+        "bytes":  6484
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/board_runner.py",
+        "sha256":  "63552949a31c3dd8da7087930563f0e7cb8996efc71503d59ee3b38025b111ee",
+        "bytes":  3337
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/private_token.py",
+        "sha256":  "5980f3be440181994f04aa9f4dd8ad445cddf101b1b00e5f8c28c785527d362f",
+        "bytes":  1360
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/tests/test_autoconnect.py",
+        "sha256":  "3510c7d061967c2bc7f7ad9271c57bdd30e55573dfc164027a432a665d60e83f",
+        "bytes":  5199
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/tests/test_systemd_parser.py",
+        "sha256":  "ad75fd124ec1ce20dbf3538c7a945286f9b9aac7c9f9963f85d7c6af1c76cab6",
+        "bytes":  1403
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/tests/windows_runner_validate.ps1",
+        "sha256":  "32d05fdd2cf35425d346bd0fbfbfd6525b12c5b71a454f22c69362250eda12d0",
+        "bytes":  2781
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/tests/windows_validate.ps1",
+        "sha256":  "79b20317efb36b0c0cac382ecf02becbed60af275dd59fc1abf2335ab30a38c3",
+        "bytes":  3231
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_conv_runner.ps1",
+        "sha256":  "d61113e6f0e467cb8d3517f1396557f583ef97333caf0a2893cb5ce1c56d8217",
+        "bytes":  1182
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_conv_setup.ps1",
+        "sha256":  "3a4b443d374f2d885af8ebef2197cafaf47a2ad01c101685d3c9bb43525093ab",
+        "bytes":  1522
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_runner.ps1",
+        "sha256":  "c59da554e514f0ba362d03f98c601ea977b35906e337fa3d787e92aac6547038",
+        "bytes":  2014
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_setup.ps1",
+        "sha256":  "f71963efdb4e816b5a90c95630d083ab57f621de7cb363e33fe59733bfb50abf",
+        "bytes":  4996
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_status.ps1",
+        "sha256":  "2440295ba4d6cd0eaa3e852b5ca7527c600d22c9e4c19048f871dcaf474c11cd",
+        "bytes":  1005
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/autostart/windows_uninstall.ps1",
+        "sha256":  "c5cc4e6db6fcf9a21f68d7ab482fc6d9df829924223346f63c62bcc89963d992",
+        "bytes":  531
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/benchmark_distance.py",
+        "sha256":  "453d4f9976dcaf41b3fbe42bed8703a12ca6fae11a48dced13b1cf07238eebb2",
+        "bytes":  8537
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/benchmark_image.py",
+        "sha256":  "f822a425c685b4dba2bfc4f360f21362609bb1d5e8bd74114b1393d53ffb2962",
+        "bytes":  4837
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/check_before_load.py",
+        "sha256":  "8694c17a485d33f0e988546aa3ad119909d7e214a65d14ef3a1de41173214ecc",
+        "bytes":  898
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/coach_features.mjs",
+        "sha256":  "fc36ab3ae4b6e75edaad3b3b60a2242098c62d404fb6f15922addb7a212a8780",
+        "bytes":  14501
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/conv_hardware_validation.json",
+        "sha256":  "847620d11d72797342d10966116395764bcb39647a868e23019fb943e3d05c0e",
+        "bytes":  2015
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/conv_knn_validation.json",
+        "sha256":  "711a3de2a7690c3edac6272b5eb8d3cb68d41cb123e1801abc97677fb345b7ce",
+        "bytes":  3157
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/conv_version.json",
+        "sha256":  "f14291dcdea5fab70e408f0e3149036c2a5fd0b48bc9f82ec0ed96b11a553d1a",
+        "bytes":  6982
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/all_models.json",
+        "sha256":  "1d868a84aab61e723d4449913526597a4250dc09c4120c83d74ef93e53bfbf17",
+        "bytes":  2814462
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/dataset_manifest.json",
+        "sha256":  "820ee034b73b0de2107de4eb8c4272d860245b2e0178a1d21a3739709d325f89",
+        "bytes":  2621
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/hardware_test_queries.json",
+        "sha256":  "7c126108dfb76280917475614d7f595c01bc0abdf88548ad71e2df4ec6caf4ea",
+        "bytes":  13470
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/hold_dataset_report.json",
+        "sha256":  "5714e3d46eafbff1b183fda41e4a6486c1506485e720bea15bd264dbead24fcc",
+        "bytes":  1640
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/hold_models.json",
+        "sha256":  "7876c0bf1f22941e06d3d43af4e4b862d0cf3fd97baebf93311949018950e643",
+        "bytes":  1621897
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/hold_poses.csv",
+        "sha256":  "2325fc89aec33eaa38c1965baef54722b0fa9c8891537b15affb40fa3aa654ca",
+        "bytes":  10477767
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/data/readme.md",
+        "sha256":  "96f03052248506c8bfe681648ba691c4149c98dca309de645f29ec14b508dfde",
+        "bytes":  1053
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/dataset_engine.mjs",
+        "sha256":  "7575c884e306da392b5a5addc74e0479cfa86ac0ce9e58e123dbf0b4f75baa04",
+        "bytes":  31048
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/dataset_ui_helpers.mjs",
+        "sha256":  "2fb971edae7d63d84622e737cc2bb48ce969965c15cfd29ab26b6f717696af56",
+        "bytes":  2941
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/exercise_catalog.json",
+        "sha256":  "a6da404afee76a60e202ec6808aa1d093161b659f20f2e2ac457a905ae079d5a",
+        "bytes":  1273
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/exercise_counter.py",
+        "sha256":  "6b36656e4759216ab9a5af7fe334a05fd4f2f8c6de1628c5901fde164f67e15c",
+        "bytes":  7793
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_classifier.py",
+        "sha256":  "253e511efa231b45a5871ced9aea1b35efead7debe0fb5d96d4c420d1c544b2b",
+        "bytes":  37504
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_convolution.py",
+        "sha256":  "25d89fdc5d405a078bdcd31f90f3eb11925c5be78a23aec9f1cd9287996f31e1",
+        "bytes":  5892
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_image.py",
+        "sha256":  "2f5d6f55dcc9b5826109577fca7dbe86f4a0760e5866e7c4589b1be3ca96e105",
+        "bytes":  16587
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_multiaction_pose.html",
+        "sha256":  "cca9790e0d18f781db1e769aa0e2a3aa896292304616c5a8e0d237876bb2a14c",
+        "bytes":  24146073
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_pose_client.mjs",
+        "sha256":  "93f9fb8b9f5ef81dbc784eccefa510e7759b93e85589e6f13cd198c15f604469",
+        "bytes":  34044
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/fpga_pose_server.py",
+        "sha256":  "db50936d34ac03a176f1f0b4a8cbbc0ea0e060ff2c4cc6133047c14c77b1c313",
+        "bytes":  31333
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/build_vivado.tcl",
+        "sha256":  "2ab41cc311b03e38a730b468b31ff8ef0efa1ab61dd4690cda6e6a798ec11c9f",
+        "bytes":  34014
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/image_preprocess_axi.v",
+        "sha256":  "3c979dd7948dbba8d28a643495e2e5bbbd27840d7bf4ae06f55b7624979b63f3",
+        "bytes":  12321
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/image_register_map.json",
+        "sha256":  "324c2760ba184e0d694db3fc8fda0845bc4db05eb753e25894d79fe2b3c8ffcc",
+        "bytes":  4096
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/pose_conv_axi.v",
+        "sha256":  "ca2f3615ddbb0d5cfd8551249b056ecac9b45ceccc3ddb86cffda050a62d4328",
+        "bytes":  11228
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/pose_knn_distance_axi.v",
+        "sha256":  "c28d6b35894e8bf1cbcc8ab0b9c742a0878d99deb41de20bbb5ce5aa1fa345b7",
+        "bytes":  20568
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/register_map.json",
+        "sha256":  "4a0a03e21da69b8f6d46754dc7504d1da460824cea21ad9901a8217e87b4b325",
+        "bytes":  4356
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/register_map.md",
+        "sha256":  "5d118a6f5011192e3322a057fc9d6765b2c7c46081a25cc0da3ca8eda8992162",
+        "bytes":  5092
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/run_rtl_sim.tcl",
+        "sha256":  "2fc5df4c14fa44157d5dd1688af547525c7ed9b458fc22fc92d3d4fb37d41c5b",
+        "bytes":  6862
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/tb_image_preprocess_axi.v",
+        "sha256":  "06a8004ff304d36b63dc7f11089a6db665431257699523265557ae50795acbd1",
+        "bytes":  11325
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/tb_pose_conv_axi.v",
+        "sha256":  "88cdf67c6354b5815ff213041e013cf34da62d4c1e6253219d51b8549c95c866",
+        "bytes":  6491
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hardware/tb_pose_knn_distance_axi.v",
+        "sha256":  "82fc9e392c73e37df2b09d77fdc49aa0d11f9e347904adeb69ec269c595f3613",
+        "bytes":  11255
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/hold_profile.mjs",
+        "sha256":  "1e2c4de415fec51272824743dded7a8542e6b305cb0912c47e9da4b8a2ac26b1",
+        "bytes":  4444
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/mediapipe_conv_engine.py",
+        "sha256":  "992a07769147a43be0fc32caf599f0b827b296b49c56cca7d7be174f98e7b5e3",
+        "bytes":  5507
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/mediapipe_conv_relay.py",
+        "sha256":  "5511e9bf3b9a6c9252523bdbab8a106de64ed0dd13472573c573605ffaa0169d",
+        "bytes":  2175
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/mediapipe_license.txt",
+        "sha256":  "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8",
+        "bytes":  12331
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/contract.json",
+        "sha256":  "25211ebafa7b2368e039d4d768bf80fdfdb09462d741296ce1c39ea622e65abd",
+        "bytes":  1070
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/head_weights.npz",
+        "sha256":  "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e",
+        "bytes":  901910
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/landmark_full_reference.tflite",
+        "sha256":  "ad6cfd3c903eb31a4ee788b809e45ecf9fa69923b69b9f3f2d9ae616ff433e58",
+        "bytes":  2818390
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/landmark_prefix.tflite",
+        "sha256":  "51cb0555ba183d883c17abe1f9a4acb25fcab4566f411036972bd86adb7653f5",
+        "bytes":  2814168
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/pose_detector.tflite",
+        "sha256":  "46837eb883e6ec75b52c5f5ff6a9b78bd35e66c13f95e8c3566c582d146cb1d9",
+        "bytes":  2959078
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/models/mediapipe_conv/reference_pose.jpg",
+        "sha256":  "c8a830ed683c0276d713dd5aeda28f415f10cd6291972084a40d0d8b934ed62b",
+        "bytes":  44100
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/overlays/pose_distance.bit",
+        "sha256":  "64bcd973ed2f3535039bc3145ba3968fd73d79ac389beb27e83ba473b559c9fa",
+        "bytes":  4045679
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/overlays/pose_distance.hwh",
+        "sha256":  "27ff7e8dc1f73ae30989c2d2527585b643540803e80fb75bee92c6e61e783900",
+        "bytes":  513807
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/parallel_version.json",
+        "sha256":  "f605d0b2fef40b9e2f828caddfc4096063d9891fc6114bbcb18a716a5db420c4",
+        "bytes":  680
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pose_classifier.mjs",
+        "sha256":  "776a9550835a3e0c7b8dfb3fa691d845ac9526f943d9d00016ec82cb2bc56572",
+        "bytes":  131
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pose_conv_relay.py",
+        "sha256":  "babb7e81eab6cea7ad81cd0c075c7c225a0d82222529084ddf16fa0f27e80775",
+        "bytes":  4791
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pose_dataset_worker.mjs",
+        "sha256":  "d70b6546585207983b0ae88a8fb6aa4721a4010d98f0573b33247c7c39271941",
+        "bytes":  4569
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pose_profile.mjs",
+        "sha256":  "08e17f7fbdee0aad0680d2cd414089d8df4d6561ac2b9f17473f343e8f839c99",
+        "bytes":  6493
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pynq_fpga_pose_parallel_ai.ipynb",
+        "sha256":  "f13dcda7dd9b1df8279f6a6b279743e2371a93c2faaf840768b3cc2e9327113f",
+        "bytes":  5663
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/pynq_pose_server.py",
+        "sha256":  "bccd85cc62f0b839b6d0385819513770080438b64517904489f31348423af94c",
+        "bytes":  6038
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/readme_latest.md",
+        "sha256":  "47d921f6e08a89a100499696c861fbf0aaf9577504ce44c025c348163dad5ad9",
+        "bytes":  2318
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/board_runtime_validation.json",
+        "sha256":  "a8664f8feba0c7007c059b0d8437c2069ab000a6f9ac29aaae657325b62ffa27",
+        "bytes":  2195
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/clocks.rpt",
+        "sha256":  "28b08f8b805afec364e0842385f6033f6701fa46463861664482dc665391f2ba",
+        "bytes":  1540
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/drc.rpt",
+        "sha256":  "531e08cc5372b8911b1881f27cd868c6c8c14aaf8e981e48dee68a67d08ca03e",
+        "bytes":  136894
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/hybrid_pipeline_validation.json",
+        "sha256":  "5a0b2cb68802870b96ba8b37d5eef7a855145887b43144761b11e0e1d9367b53",
+        "bytes":  1054
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/measured_metrics.md",
+        "sha256":  "1d950792a108cdb893618114b84d491dc7b662073e014b43e49f6a43cc309936",
+        "bytes":  1126
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/timing_paths.rpt",
+        "sha256":  "16fb0675a55fc4933650b18ac84737faf0d7bbbe3e6c3f77a3372e81d0866d87",
+        "bytes":  45873
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/timing_summary.rpt",
+        "sha256":  "3418f0b704dd449a228f797703e62bb5f93b2bce04ce0903f0de960027d4d337",
+        "bytes":  34196
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/utilization.rpt",
+        "sha256":  "3e8c711e024b06014445f954d026d3bfb9db50ad318f1a97d625d38f093203c7",
+        "bytes":  12101
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/utilization_hierarchical.rpt",
+        "sha256":  "e8319ba8c172a8059ff6bcb9d53a67bff3f328b9de4bcd722faf9b373de0ee29",
+        "bytes":  129916
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/reports_conv/vivado_metrics.json",
+        "sha256":  "62a40af0457bfc8c2d09ce1ff163033bbc4a83edfa20b6fa93aedf424aa5bcef",
+        "bytes":  1235
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/requirements-conv.txt",
+        "sha256":  "c9718ff466c57589fda5b2085010411eaecd11d881af73227fa5e32fe4d1f3a8",
+        "bytes":  71
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/sideview_test_models.json",
+        "sha256":  "65b23593ada48150861ebba16906d460f44f269a07b279f7eba7271b463d0c0a",
+        "bytes":  120470
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/start_vivado_2022_2.tcl",
+        "sha256":  "5ddcab245f9758185bc5bd9aa811140a20f972fc8339c9f988b717a81609b126",
+        "bytes":  1432
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_ai_coach.py",
+        "sha256":  "f9cdae820bbcc4904068a5629bfb5f531ae79beb9b821e1f985f422382f04af9",
+        "bytes":  13521
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_board_dataset.py",
+        "sha256":  "c97e35f3b71b623f8060951183514332ec097c30e9a3058d62c8674d50d73867",
+        "bytes":  18246
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_board_v2.py",
+        "sha256":  "d818da69158cc8bdc94ed2ed947a07468000a11d09bb000bd2ff802597db0ff9",
+        "bytes":  19787
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_coach_features.mjs",
+        "sha256":  "3d37372d04a0d0252c87fe8cc8ac9bc345541499f46fde60050dcd80f5f2768d",
+        "bytes":  11778
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_coach_integration.py",
+        "sha256":  "79db928c121820e971d33249751678601f75cd51e9c028d81f4520fe8f0245ba",
+        "bytes":  5532
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_dataset_model.mjs",
+        "sha256":  "c4682a8c0074a6bdc22704e5eb41c4aabf32542a603b5e9be01e2866cbfa96c0",
+        "bytes":  13085
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_dataset_ui.mjs",
+        "sha256":  "18e7050f8fcb3e3f190ed614611aa69e9bd9333fa3d2078898560b7188f0a988",
+        "bytes":  4615
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_frontend_training.mjs",
+        "sha256":  "9a20fea6185ea498b172ce0586dcb8bc3b4ed455b6157d190cd3e26cbb56536f",
+        "bytes":  2950
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_hold_profile.mjs",
+        "sha256":  "d5045c4b379d2a79a2bc9b544ba68f4371f659a476b212e32b36cec03c3ac51c",
+        "bytes":  3138
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_pose_conv_relay.py",
+        "sha256":  "d78d6bffca24458c356cea49c1e3e1ed2b64181610a2593b2347359baec5f1c4",
+        "bytes":  3197
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_pose_profile.mjs",
+        "sha256":  "afe8949d45425528a943c114e2578fcdc077cf71b808ed8037db5430815cb502",
+        "bytes":  4835
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_profile_backend.py",
+        "sha256":  "491ff33c8b199a18da7872b7bfd238c53b5a26767904630618f19dfa01152432",
+        "bytes":  8564
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_side_worker.mjs",
+        "sha256":  "49d41b7216772b23ef844dfed7230f4c69abcfa3afc57dfcd3c9e1d032e16b20",
+        "bytes":  1800
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tests/test_training_session.py",
+        "sha256":  "e0ce19c5bb3fbf9a67d73cdb2a9a619db425ec831565a99e75da0a01a0f2a803",
+        "bytes":  5266
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/asset_manifest.json",
+        "sha256":  "b3dbf010655f0b5731f01d38129084921c7e7690b01b626c6b114bd6310bb6ce",
+        "bytes":  687
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/benchmark_algorithms.mjs",
+        "sha256":  "c114724525e9424c3c7aa52570a76f29fb4edc10591101d9864982db64cb7e3f",
+        "bytes":  2550
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/build_test_queries.mjs",
+        "sha256":  "267992f3e8ee483037a228801c4ea4ee12d8879f73a469eab65f28cb2f356e89",
+        "bytes":  1256
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/export_mediapipe_conv.py",
+        "sha256":  "5529291e4cd557276d2eb39da88ec608fa3628230fbb74ca4c1257732785b59b",
+        "bytes":  4035
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/frontend_template.html",
+        "sha256":  "f43e27ed218933538d8d983c0df63ad5091ee5218276751e353262792a7b61c0",
+        "bytes":  8425
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/rebuild_frontend.py",
+        "sha256":  "1b863ed980b82039a62eb3786f382fa2e48ab6a48088bd159594a60309b2b4f2",
+        "bytes":  2298
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/tools/train_holds.mjs",
+        "sha256":  "dfe2440ad54db4d89f712cf7e9b71d86b934547e955a00a2e9e8f1831a870bf3",
+        "bytes":  4951
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/training_session.py",
+        "sha256":  "14970d53843c663cc6bfc5693ea60c8a9907ee359833460d46afc346966c2afb",
+        "bytes":  6131
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/verify_convolution.py",
+        "sha256":  "e76e297cf82988ea1ca517cf0b5d0814d6ced4a8ad52117f3052214e513b8745",
+        "bytes":  2039
+    },
+    {
+        "path":  "board/fpga_pose_parallel_ai_20261028/verify_parallel_hardware.py",
+        "sha256":  "04933251a056587db73b73f601e77af4daa772c4c72f680c59bc1139d2da96e1",
+        "bytes":  3744
+    },
+    {
+        "path":  "build/reports_conv/board_runtime_validation.json",
+        "sha256":  "a8664f8feba0c7007c059b0d8437c2069ab000a6f9ac29aaae657325b62ffa27",
+        "bytes":  2195
+    },
+    {
+        "path":  "build/reports_conv/clocks.rpt",
+        "sha256":  "28b08f8b805afec364e0842385f6033f6701fa46463861664482dc665391f2ba",
+        "bytes":  1540
+    },
+    {
+        "path":  "build/reports_conv/drc.rpt",
+        "sha256":  "531e08cc5372b8911b1881f27cd868c6c8c14aaf8e981e48dee68a67d08ca03e",
+        "bytes":  136894
+    },
+    {
+        "path":  "build/reports_conv/hybrid_pipeline_validation.json",
+        "sha256":  "5a0b2cb68802870b96ba8b37d5eef7a855145887b43144761b11e0e1d9367b53",
+        "bytes":  1054
+    },
+    {
+        "path":  "build/reports_conv/measured_metrics.md",
+        "sha256":  "1d950792a108cdb893618114b84d491dc7b662073e014b43e49f6a43cc309936",
+        "bytes":  1126
+    },
+    {
+        "path":  "build/reports_conv/timing_paths.rpt",
+        "sha256":  "16fb0675a55fc4933650b18ac84737faf0d7bbbe3e6c3f77a3372e81d0866d87",
+        "bytes":  45873
+    },
+    {
+        "path":  "build/reports_conv/timing_summary.rpt",
+        "sha256":  "3418f0b704dd449a228f797703e62bb5f93b2bce04ce0903f0de960027d4d337",
+        "bytes":  34196
+    },
+    {
+        "path":  "build/reports_conv/utilization.rpt",
+        "sha256":  "3e8c711e024b06014445f954d026d3bfb9db50ad318f1a97d625d38f093203c7",
+        "bytes":  12101
+    },
+    {
+        "path":  "build/reports_conv/utilization_hierarchical.rpt",
+        "sha256":  "e8319ba8c172a8059ff6bcb9d53a67bff3f328b9de4bcd722faf9b373de0ee29",
+        "bytes":  129916
+    },
+    {
+        "path":  "build/reports_conv/vivado_metrics.json",
+        "sha256":  "62a40af0457bfc8c2d09ce1ff163033bbc4a83edfa20b6fa93aedf424aa5bcef",
+        "bytes":  1235
+    },
+    {
+        "path":  "data/action_data/all_models.json",
+        "sha256":  "1d868a84aab61e723d4449913526597a4250dc09c4120c83d74ef93e53bfbf17",
+        "bytes":  2814462
+    },
+    {
+        "path":  "data/action_data/dataset_manifest.json",
+        "sha256":  "820ee034b73b0de2107de4eb8c4272d860245b2e0178a1d21a3739709d325f89",
+        "bytes":  2621
+    },
+    {
+        "path":  "data/action_data/hardware_test_queries.json",
+        "sha256":  "7c126108dfb76280917475614d7f595c01bc0abdf88548ad71e2df4ec6caf4ea",
+        "bytes":  13470
+    },
+    {
+        "path":  "data/action_data/hold_dataset_report.json",
+        "sha256":  "5714e3d46eafbff1b183fda41e4a6486c1506485e720bea15bd264dbead24fcc",
+        "bytes":  1640
+    },
+    {
+        "path":  "data/action_data/hold_models.json",
+        "sha256":  "7876c0bf1f22941e06d3d43af4e4b862d0cf3fd97baebf93311949018950e643",
+        "bytes":  1621897
+    },
+    {
+        "path":  "data/action_data/hold_poses.csv",
+        "sha256":  "2325fc89aec33eaa38c1965baef54722b0fa9c8891537b15affb40fa3aa654ca",
+        "bytes":  10477767
+    },
+    {
+        "path":  "data/action_data/readme.md",
+        "sha256":  "96f03052248506c8bfe681648ba691c4149c98dca309de645f29ec14b508dfde",
+        "bytes":  1053
+    },
+    {
+        "path":  "data/models/mediapipe_conv/contract.json",
+        "sha256":  "25211ebafa7b2368e039d4d768bf80fdfdb09462d741296ce1c39ea622e65abd",
+        "bytes":  1070
+    },
+    {
+        "path":  "data/models/mediapipe_conv/head_weights.npz",
+        "sha256":  "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e",
+        "bytes":  901910
+    },
+    {
+        "path":  "data/models/mediapipe_conv/landmark_full_reference.tflite",
+        "sha256":  "ad6cfd3c903eb31a4ee788b809e45ecf9fa69923b69b9f3f2d9ae616ff433e58",
+        "bytes":  2818390
+    },
+    {
+        "path":  "data/models/mediapipe_conv/landmark_prefix.tflite",
+        "sha256":  "51cb0555ba183d883c17abe1f9a4acb25fcab4566f411036972bd86adb7653f5",
+        "bytes":  2814168
+    },
+    {
+        "path":  "data/models/mediapipe_conv/pose_detector.tflite",
+        "sha256":  "46837eb883e6ec75b52c5f5ff6a9b78bd35e66c13f95e8c3566c582d146cb1d9",
+        "bytes":  2959078
+    },
+    {
+        "path":  "data/models/mediapipe_conv/reference_pose.jpg",
+        "sha256":  "c8a830ed683c0276d713dd5aeda28f415f10cd6291972084a40d0d8b934ed62b",
+        "bytes":  44100
+    },
+    {
+        "path":  "filename_case_changes.json",
+        "sha256":  "20202e0c59466606de1684f24f80d9a02ef776736a24cbb6c463043123f90908",
+        "bytes":  687
+    },
+    {
+        "path":  "readme.md",
+        "sha256":  "3c15f828e8acb1d41a1df5b654dafaf8f36a41b2d2d3127b032c2ca6321460a3",
+        "bytes":  9163
+    },
+    {
+        "path":  "report/collaboration_record.md",
+        "sha256":  "4cc26c2b17e145e0dafd4371c83c884820f4a4545e04b7cfc1982303390cadbf",
+        "bytes":  993
+    },
+    {
+        "path":  "report/project_report.docx",
+        "sha256":  "41dd1860531f274b14e4ddc22bcbf3c5a790566e3f5ff462a39d574a2df3c709",
+        "bytes":  1270354
+    },
+    {
+        "path":  "report/readme.md",
+        "sha256":  "fd494469cdf894b6efdb71d8dfe1bf52d442b4d34828e3f365d9d6cf9a32fe88",
+        "bytes":  307
+    },
+    {
+        "path":  "sim/conv_hardware_validation.json",
+        "sha256":  "847620d11d72797342d10966116395764bcb39647a868e23019fb943e3d05c0e",
+        "bytes":  2015
+    },
+    {
+        "path":  "sim/conv_knn_validation.json",
+        "sha256":  "711a3de2a7690c3edac6272b5eb8d3cb68d41cb123e1801abc97677fb345b7ce",
+        "bytes":  3157
+    },
+    {
+        "path":  "sim/tb_image_preprocess_axi.v",
+        "sha256":  "06a8004ff304d36b63dc7f11089a6db665431257699523265557ae50795acbd1",
+        "bytes":  11325
+    },
+    {
+        "path":  "sim/tb_pose_conv_axi.v",
+        "sha256":  "88cdf67c6354b5815ff213041e013cf34da62d4c1e6253219d51b8549c95c866",
+        "bytes":  6491
+    },
+    {
+        "path":  "sim/tb_pose_knn_distance_axi.v",
+        "sha256":  "82fc9e392c73e37df2b09d77fdc49aa0d11f9e347904adeb69ec269c595f3613",
+        "bytes":  11255
+    },
+    {
+        "path":  "sim/tests/test_ai_coach.py",
+        "sha256":  "f9cdae820bbcc4904068a5629bfb5f531ae79beb9b821e1f985f422382f04af9",
+        "bytes":  13521
+    },
+    {
+        "path":  "sim/tests/test_board_dataset.py",
+        "sha256":  "c97e35f3b71b623f8060951183514332ec097c30e9a3058d62c8674d50d73867",
+        "bytes":  18246
+    },
+    {
+        "path":  "sim/tests/test_board_v2.py",
+        "sha256":  "d818da69158cc8bdc94ed2ed947a07468000a11d09bb000bd2ff802597db0ff9",
+        "bytes":  19787
+    },
+    {
+        "path":  "sim/tests/test_coach_features.mjs",
+        "sha256":  "3d37372d04a0d0252c87fe8cc8ac9bc345541499f46fde60050dcd80f5f2768d",
+        "bytes":  11778
+    },
+    {
+        "path":  "sim/tests/test_coach_integration.py",
+        "sha256":  "79db928c121820e971d33249751678601f75cd51e9c028d81f4520fe8f0245ba",
+        "bytes":  5532
+    },
+    {
+        "path":  "sim/tests/test_dataset_model.mjs",
+        "sha256":  "c4682a8c0074a6bdc22704e5eb41c4aabf32542a603b5e9be01e2866cbfa96c0",
+        "bytes":  13085
+    },
+    {
+        "path":  "sim/tests/test_dataset_ui.mjs",
+        "sha256":  "18e7050f8fcb3e3f190ed614611aa69e9bd9333fa3d2078898560b7188f0a988",
+        "bytes":  4615
+    },
+    {
+        "path":  "sim/tests/test_frontend_training.mjs",
+        "sha256":  "9a20fea6185ea498b172ce0586dcb8bc3b4ed455b6157d190cd3e26cbb56536f",
+        "bytes":  2950
+    },
+    {
+        "path":  "sim/tests/test_hold_profile.mjs",
+        "sha256":  "d5045c4b379d2a79a2bc9b544ba68f4371f659a476b212e32b36cec03c3ac51c",
+        "bytes":  3138
+    },
+    {
+        "path":  "sim/tests/test_pose_conv_relay.py",
+        "sha256":  "d78d6bffca24458c356cea49c1e3e1ed2b64181610a2593b2347359baec5f1c4",
+        "bytes":  3197
+    },
+    {
+        "path":  "sim/tests/test_pose_profile.mjs",
+        "sha256":  "afe8949d45425528a943c114e2578fcdc077cf71b808ed8037db5430815cb502",
+        "bytes":  4835
+    },
+    {
+        "path":  "sim/tests/test_profile_backend.py",
+        "sha256":  "491ff33c8b199a18da7872b7bfd238c53b5a26767904630618f19dfa01152432",
+        "bytes":  8564
+    },
+    {
+        "path":  "sim/tests/test_side_worker.mjs",
+        "sha256":  "49d41b7216772b23ef844dfed7230f4c69abcfa3afc57dfcd3c9e1d032e16b20",
+        "bytes":  1800
+    },
+    {
+        "path":  "sim/tests/test_training_session.py",
+        "sha256":  "e0ce19c5bb3fbf9a67d73cdb2a9a619db425ec831565a99e75da0a01a0f2a803",
+        "bytes":  5266
+    },
+    {
+        "path":  "skill/checks.md",
+        "sha256":  "911d18c151784d74d9231f75d722c14861071cead2467f91254e430c5e9d5ce5",
+        "bytes":  1279
+    },
+    {
+        "path":  "skill/pitfalls.md",
+        "sha256":  "488f5c737460d4be488b235cc46dab68e8cfc8a26da3690c6ccbe3b6481cc137",
+        "bytes":  1114
+    },
+    {
+        "path":  "skill/prompts.md",
+        "sha256":  "fefaa44eb6c46a1250e4ba959b0c2d399487650447dba55fdfc651ebf8146ff8",
+        "bytes":  1056
+    },
+    {
+        "path":  "skill/readme.md",
+        "sha256":  "564819a0ad68690b6674d4c4a966bf735a91f61e994327e82895be3587986d6c",
+        "bytes":  1020
+    },
+    {
+        "path":  "skill/templates.md",
+        "sha256":  "f23c6b9a92e247c85b3d743b3fde3e4c4d2cd65bbd43ab11df9ba64fb42dfa82",
+        "bytes":  943
+    },
+    {
+        "path":  "src/ai_coach.py",
+        "sha256":  "3689d65ad71a2a161bcb51a8d6379d283edc67723252c281c621d40c0a17c323",
+        "bytes":  20749
+    },
+    {
+        "path":  "src/ai_coach_relay.py",
+        "sha256":  "688eae95d53c1eed3c6abbb45b58d76a1c922999e9f0c38ca4cb9889952c44b2",
+        "bytes":  5826
+    },
+    {
+        "path":  "src/autostart/board_manage.py",
+        "sha256":  "e7ad218247c7a49feaf7313a0f216bbf61f6dba198339c77ebe318bf1dccf529",
+        "bytes":  6484
+    },
+    {
+        "path":  "src/autostart/board_runner.py",
+        "sha256":  "63552949a31c3dd8da7087930563f0e7cb8996efc71503d59ee3b38025b111ee",
+        "bytes":  3337
+    },
+    {
+        "path":  "src/autostart/private_token.py",
+        "sha256":  "5980f3be440181994f04aa9f4dd8ad445cddf101b1b00e5f8c28c785527d362f",
+        "bytes":  1360
+    },
+    {
+        "path":  "src/autostart/tests/test_autoconnect.py",
+        "sha256":  "3510c7d061967c2bc7f7ad9271c57bdd30e55573dfc164027a432a665d60e83f",
+        "bytes":  5199
+    },
+    {
+        "path":  "src/autostart/tests/test_systemd_parser.py",
+        "sha256":  "ad75fd124ec1ce20dbf3538c7a945286f9b9aac7c9f9963f85d7c6af1c76cab6",
+        "bytes":  1403
+    },
+    {
+        "path":  "src/autostart/tests/windows_runner_validate.ps1",
+        "sha256":  "32d05fdd2cf35425d346bd0fbfbfd6525b12c5b71a454f22c69362250eda12d0",
+        "bytes":  2781
+    },
+    {
+        "path":  "src/autostart/tests/windows_validate.ps1",
+        "sha256":  "79b20317efb36b0c0cac382ecf02becbed60af275dd59fc1abf2335ab30a38c3",
+        "bytes":  3231
+    },
+    {
+        "path":  "src/autostart/windows_conv_runner.ps1",
+        "sha256":  "d61113e6f0e467cb8d3517f1396557f583ef97333caf0a2893cb5ce1c56d8217",
+        "bytes":  1182
+    },
+    {
+        "path":  "src/autostart/windows_conv_setup.ps1",
+        "sha256":  "3a4b443d374f2d885af8ebef2197cafaf47a2ad01c101685d3c9bb43525093ab",
+        "bytes":  1522
+    },
+    {
+        "path":  "src/autostart/windows_runner.ps1",
+        "sha256":  "c59da554e514f0ba362d03f98c601ea977b35906e337fa3d787e92aac6547038",
+        "bytes":  2014
+    },
+    {
+        "path":  "src/autostart/windows_setup.ps1",
+        "sha256":  "f71963efdb4e816b5a90c95630d083ab57f621de7cb363e33fe59733bfb50abf",
+        "bytes":  4996
+    },
+    {
+        "path":  "src/autostart/windows_status.ps1",
+        "sha256":  "2440295ba4d6cd0eaa3e852b5ca7527c600d22c9e4c19048f871dcaf474c11cd",
+        "bytes":  1005
+    },
+    {
+        "path":  "src/autostart/windows_uninstall.ps1",
+        "sha256":  "c5cc4e6db6fcf9a21f68d7ab482fc6d9df829924223346f63c62bcc89963d992",
+        "bytes":  531
+    },
+    {
+        "path":  "src/benchmark_distance.py",
+        "sha256":  "453d4f9976dcaf41b3fbe42bed8703a12ca6fae11a48dced13b1cf07238eebb2",
+        "bytes":  8537
+    },
+    {
+        "path":  "src/benchmark_image.py",
+        "sha256":  "f822a425c685b4dba2bfc4f360f21362609bb1d5e8bd74114b1393d53ffb2962",
+        "bytes":  4837
+    },
+    {
+        "path":  "src/check_before_load.py",
+        "sha256":  "8694c17a485d33f0e988546aa3ad119909d7e214a65d14ef3a1de41173214ecc",
+        "bytes":  898
+    },
+    {
+        "path":  "src/coach_features.mjs",
+        "sha256":  "fc36ab3ae4b6e75edaad3b3b60a2242098c62d404fb6f15922addb7a212a8780",
+        "bytes":  14501
+    },
+    {
+        "path":  "src/dataset_engine.mjs",
+        "sha256":  "7575c884e306da392b5a5addc74e0479cfa86ac0ce9e58e123dbf0b4f75baa04",
+        "bytes":  31048
+    },
+    {
+        "path":  "src/dataset_ui_helpers.mjs",
+        "sha256":  "2fb971edae7d63d84622e737cc2bb48ce969965c15cfd29ab26b6f717696af56",
+        "bytes":  2941
+    },
+    {
+        "path":  "src/exercise_counter.py",
+        "sha256":  "6b36656e4759216ab9a5af7fe334a05fd4f2f8c6de1628c5901fde164f67e15c",
+        "bytes":  7793
+    },
+    {
+        "path":  "src/fpga_classifier.py",
+        "sha256":  "253e511efa231b45a5871ced9aea1b35efead7debe0fb5d96d4c420d1c544b2b",
+        "bytes":  37504
+    },
+    {
+        "path":  "src/fpga_convolution.py",
+        "sha256":  "25d89fdc5d405a078bdcd31f90f3eb11925c5be78a23aec9f1cd9287996f31e1",
+        "bytes":  5892
+    },
+    {
+        "path":  "src/fpga_image.py",
+        "sha256":  "2f5d6f55dcc9b5826109577fca7dbe86f4a0760e5866e7c4589b1be3ca96e105",
+        "bytes":  16587
+    },
+    {
+        "path":  "src/fpga_multiaction_pose.html",
+        "sha256":  "cca9790e0d18f781db1e769aa0e2a3aa896292304616c5a8e0d237876bb2a14c",
+        "bytes":  24146073
+    },
+    {
+        "path":  "src/fpga_pose_client.mjs",
+        "sha256":  "93f9fb8b9f5ef81dbc784eccefa510e7759b93e85589e6f13cd198c15f604469",
+        "bytes":  34044
+    },
+    {
+        "path":  "src/fpga_pose_server.py",
+        "sha256":  "db50936d34ac03a176f1f0b4a8cbbc0ea0e060ff2c4cc6133047c14c77b1c313",
+        "bytes":  31333
+    },
+    {
+        "path":  "src/hardware/build_vivado.tcl",
+        "sha256":  "2ab41cc311b03e38a730b468b31ff8ef0efa1ab61dd4690cda6e6a798ec11c9f",
+        "bytes":  34014
+    },
+    {
+        "path":  "src/hardware/image_preprocess_axi.v",
+        "sha256":  "3c979dd7948dbba8d28a643495e2e5bbbd27840d7bf4ae06f55b7624979b63f3",
+        "bytes":  12321
+    },
+    {
+        "path":  "src/hardware/image_register_map.json",
+        "sha256":  "324c2760ba184e0d694db3fc8fda0845bc4db05eb753e25894d79fe2b3c8ffcc",
+        "bytes":  4096
+    },
+    {
+        "path":  "src/hardware/pose_conv_axi.v",
+        "sha256":  "ca2f3615ddbb0d5cfd8551249b056ecac9b45ceccc3ddb86cffda050a62d4328",
+        "bytes":  11228
+    },
+    {
+        "path":  "src/hardware/pose_knn_distance_axi.v",
+        "sha256":  "c28d6b35894e8bf1cbcc8ab0b9c742a0878d99deb41de20bbb5ce5aa1fa345b7",
+        "bytes":  20568
+    },
+    {
+        "path":  "src/hardware/register_map.json",
+        "sha256":  "4a0a03e21da69b8f6d46754dc7504d1da460824cea21ad9901a8217e87b4b325",
+        "bytes":  4356
+    },
+    {
+        "path":  "src/hardware/register_map.md",
+        "sha256":  "5d118a6f5011192e3322a057fc9d6765b2c7c46081a25cc0da3ca8eda8992162",
+        "bytes":  5092
+    },
+    {
+        "path":  "src/hardware/run_rtl_sim.tcl",
+        "sha256":  "2fc5df4c14fa44157d5dd1688af547525c7ed9b458fc22fc92d3d4fb37d41c5b",
+        "bytes":  6862
+    },
+    {
+        "path":  "src/hardware/tb_image_preprocess_axi.v",
+        "sha256":  "06a8004ff304d36b63dc7f11089a6db665431257699523265557ae50795acbd1",
+        "bytes":  11325
+    },
+    {
+        "path":  "src/hardware/tb_pose_conv_axi.v",
+        "sha256":  "88cdf67c6354b5815ff213041e013cf34da62d4c1e6253219d51b8549c95c866",
+        "bytes":  6491
+    },
+    {
+        "path":  "src/hardware/tb_pose_knn_distance_axi.v",
+        "sha256":  "82fc9e392c73e37df2b09d77fdc49aa0d11f9e347904adeb69ec269c595f3613",
+        "bytes":  11255
+    },
+    {
+        "path":  "src/hold_profile.mjs",
+        "sha256":  "1e2c4de415fec51272824743dded7a8542e6b305cb0912c47e9da4b8a2ac26b1",
+        "bytes":  4444
+    },
+    {
+        "path":  "src/mediapipe_conv_engine.py",
+        "sha256":  "992a07769147a43be0fc32caf599f0b827b296b49c56cca7d7be174f98e7b5e3",
+        "bytes":  5507
+    },
+    {
+        "path":  "src/mediapipe_conv_relay.py",
+        "sha256":  "5511e9bf3b9a6c9252523bdbab8a106de64ed0dd13472573c573605ffaa0169d",
+        "bytes":  2175
+    },
+    {
+        "path":  "src/pose_classifier.mjs",
+        "sha256":  "776a9550835a3e0c7b8dfb3fa691d845ac9526f943d9d00016ec82cb2bc56572",
+        "bytes":  131
+    },
+    {
+        "path":  "src/pose_conv_relay.py",
+        "sha256":  "babb7e81eab6cea7ad81cd0c075c7c225a0d82222529084ddf16fa0f27e80775",
+        "bytes":  4791
+    },
+    {
+        "path":  "src/pose_dataset_worker.mjs",
+        "sha256":  "d70b6546585207983b0ae88a8fb6aa4721a4010d98f0573b33247c7c39271941",
+        "bytes":  4569
+    },
+    {
+        "path":  "src/pose_profile.mjs",
+        "sha256":  "08e17f7fbdee0aad0680d2cd414089d8df4d6561ac2b9f17473f343e8f839c99",
+        "bytes":  6493
+    },
+    {
+        "path":  "src/pynq_pose_server.py",
+        "sha256":  "bccd85cc62f0b839b6d0385819513770080438b64517904489f31348423af94c",
+        "bytes":  6038
+    },
+    {
+        "path":  "src/start_vivado_2022_2.tcl",
+        "sha256":  "5ddcab245f9758185bc5bd9aa811140a20f972fc8339c9f988b717a81609b126",
+        "bytes":  1432
+    },
+    {
+        "path":  "src/tools/asset_manifest.json",
+        "sha256":  "b3dbf010655f0b5731f01d38129084921c7e7690b01b626c6b114bd6310bb6ce",
+        "bytes":  687
+    },
+    {
+        "path":  "src/tools/benchmark_algorithms.mjs",
+        "sha256":  "c114724525e9424c3c7aa52570a76f29fb4edc10591101d9864982db64cb7e3f",
+        "bytes":  2550
+    },
+    {
+        "path":  "src/tools/build_test_queries.mjs",
+        "sha256":  "267992f3e8ee483037a228801c4ea4ee12d8879f73a469eab65f28cb2f356e89",
+        "bytes":  1256
+    },
+    {
+        "path":  "src/tools/export_mediapipe_conv.py",
+        "sha256":  "5529291e4cd557276d2eb39da88ec608fa3628230fbb74ca4c1257732785b59b",
+        "bytes":  4035
+    },
+    {
+        "path":  "src/tools/frontend_template.html",
+        "sha256":  "f43e27ed218933538d8d983c0df63ad5091ee5218276751e353262792a7b61c0",
+        "bytes":  8425
+    },
+    {
+        "path":  "src/tools/rebuild_frontend.py",
+        "sha256":  "1b863ed980b82039a62eb3786f382fa2e48ab6a48088bd159594a60309b2b4f2",
+        "bytes":  2298
+    },
+    {
+        "path":  "src/tools/train_holds.mjs",
+        "sha256":  "dfe2440ad54db4d89f712cf7e9b71d86b934547e955a00a2e9e8f1831a870bf3",
+        "bytes":  4951
+    },
+    {
+        "path":  "src/training_session.py",
+        "sha256":  "14970d53843c663cc6bfc5693ea60c8a9907ee359833460d46afc346966c2afb",
+        "bytes":  6131
+    },
+    {
+        "path":  "src/verify_convolution.py",
+        "sha256":  "e76e297cf82988ea1ca517cf0b5d0814d6ced4a8ad52117f3052214e513b8745",
+        "bytes":  2039
+    },
+    {
+        "path":  "src/verify_parallel_hardware.py",
+        "sha256":  "04933251a056587db73b73f601e77af4daa772c4c72f680c59bc1139d2da96e1",
+        "bytes":  3744
+    }
+]

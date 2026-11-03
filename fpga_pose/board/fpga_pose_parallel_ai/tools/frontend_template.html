@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FPGA 卷积与并行运动监测</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eff4f8;color:#193044;font:16px/1.65 system-ui,-apple-system,"Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:24px}h1{font-size:30px;margin:0}h2{font-size:21px;margin:0 0 12px}p{margin:8px 0}.panel{background:white;border:1px solid #dbe4ed;border-radius:14px;padding:20px;margin:18px 0}.controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px}button,.file{border:1px solid #a4b9cb;background:#fff;color:#173a54;border-radius:8px;padding:9px 14px;font:inherit;cursor:pointer}button.primary{background:#1663ad;border-color:#1663ad;color:#fff}button:disabled,input:disabled,select:disabled{opacity:.45;cursor:not-allowed}input,select{font:inherit;border:1px solid #b5c6d3;border-radius:6px;padding:6px;max-width:100%}input[type=number]{width:90px}.file input{display:block;max-width:240px;font-size:13px}.note{font-size:14px;color:#536878}.status{min-height:26px;color:#204e72}.evidence{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#4d677a}canvas{display:block;max-width:100%;height:auto;background:#111;border-radius:8px;margin-top:12px}#liveCanvas{width:640px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px;text-align:left;border-bottom:1px solid #dce5ed}.tablewrap{overflow:auto}.counter{display:flex;align-items:center;gap:28px;flex-wrap:wrap}#count{font-size:72px;font-weight:750;line-height:1.1;color:#1663ad}#phase{font-size:22px;font-weight:650}#countdown{font-size:60px;line-height:1.2;font-weight:750;color:#c27c0b}details{padding:12px;background:#e6eef5;border-radius:8px}summary{cursor:pointer}label{display:inline-flex;align-items:center;gap:6px}.steps{color:#325974}[hidden]{display:none!important}
+</style><meta name="fpga-pose-presentation" content="presentation-20261027"></head><body><main>
+<h1>FPGA 卷积与并行运动监测</h1>
+<p class="steps">选择运动 → 生成并部署模型 → 设置时长 → 开始训练</p>
+<section class="panel"><h2>1. 参考数据</h2>
+<div class="controls"><button class="primary" id="loadPreset">载入内置数据</button><label class="file">导入数据集 ZIP<input id="datasetZip" type="file" accept=".zip,application/zip"></label></div>
+<details style="margin-top:12px"><summary>导入 CSV</summary><div class="controls"><label class="file">坐标文件<input id="landmarksCsv" type="file" accept=".csv,text/csv"></label><label class="file">标签文件<input id="labelsCsv" type="file" accept=".csv,text/csv"></label><button id="loadCsv">载入 CSV</button></div><p class="note">请选择同一数据集的 landmarks.csv 和 labels.csv。</p></details>
+<p id="datasetStatus" class="status" role="status">可使用内置模型，或导入参考数据。</p>
+<details><summary>样本统计</summary><div class="tablewrap"><table><thead><tr><th>运动</th><th>起始样本</th><th>到位样本</th></tr></thead><tbody id="datasetRows"></tbody></table></div></details>
+</section>
+<section class="panel"><h2>2. 运动与模型</h2>
+<div class="controls"><label>运动 <select id="exercise"><option value="squats">深蹲（计数）</option><option value="jumping_jacks">开合跳（计数）</option><option value="pushups">俯卧撑（计数）</option><option value="situp">仰卧起坐（计数）</option><option value="pullups">引体向上（计数）</option><option value="birddog">鸟狗式（计时）</option><option value="high_plank">高位平板支撑（计时）</option><option value="knee_plank">跪姿平板支撑（计时）</option></select></label><label>可见侧 <select id="pushupSide"><option value="auto">自动</option><option value="left">人体左侧</option><option value="right">人体右侧</option></select></label><label>到位确认 <input id="dwell" type="number" min="0.1" max="2" step="0.05" value="0.15">秒</label></div>
+<div class="controls" style="margin-top:12px"><button class="primary" id="train" disabled>生成模型</button><button id="deploy" disabled>部署模型</button><button id="check">检查连接</button></div>
+<p class="note">侧拍请选择清晰侧；鸟狗式需让两侧手脚入镜。</p>
+<p id="trainingStatus" class="status" role="status">选择运动后生成模型。</p><p id="deployStatus" class="status" role="status">模型未部署</p><p id="hardwareStatus" class="status" role="status">正在连接开发板…</p>
+<details><summary>模型验证</summary><p id="report" class="note"></p><div class="tablewrap"><table><thead><tr><th>阶段</th><th>训练样本</th><th>验证样本</th></tr></thead><tbody id="validationRows"></tbody></table></div></details>
+<details style="margin-top:8px"><summary>FPGA 运行状态</summary><div class="evidence"><span id="imageEvidence">图像处理：—</span><span id="poseEvidence">姿态计算：—</span></div></details>
+</section>
+<section class="panel"><h2>3. 实时训练</h2>
+<div class="controls"><label><span id="durationLabel">训练时长</span><input id="duration" type="number" min="5" max="3600" step="1" value="60">秒</label></div>
+<p id="modeHint" class="note">倒计时结束后计数，时间到自动结束。</p>
+<div class="controls"><button id="preview">打开画面</button><button class="primary" id="start" disabled>开始（准备 3 秒）</button><button id="cancelCountdown" disabled>取消准备</button><button id="pause" disabled>暂停</button><button id="resume" disabled>继续（准备 3 秒）</button><button id="reset" disabled>清零</button><button id="stop" disabled>停止</button></div>
+<div class="controls" style="margin-top:12px"><label><input id="voiceEnabled" type="checkbox">语音播报</label><button id="voiceTest">试听语音</button></div><p id="voiceStatus" class="note" role="status">语音未开启</p>
+<div id="countdownBox" hidden><p>请准备起始姿态</p><div id="countdown" aria-live="polite">3</div></div>
+<div class="counter"><div><span id="count" aria-live="polite">0</span> <span id="countUnit">次</span></div><div><div id="phase">等待起始姿态</div><p id="monitorStatus" class="status">未开始</p></div></div>
+<p id="timeStatus" class="status" aria-live="polite">未开始计时</p><p id="streamStatus" class="status" role="status">打开画面，确认站位。</p><p><strong id="result">等待画面</strong></p>
+<div class="evidence"><span id="quality">等待检测</span><span id="rate">帧率：—</span></div><canvas id="liveCanvas" hidden aria-label="实时画面和人体骨架"></canvas>
+<details style="margin-top:12px"><summary>处理耗时</summary><span id="latency">—</span></details>
+</section>
+<section class="panel"><h2>4. DeepSeek 点评</h2>
+<div class="controls"><label><input id="aiEnabled" type="checkbox">启用 AI 点评</label><button id="aiEvaluate" disabled>评估当前运动</button></div>
+<p id="aiStatus" class="status" role="status">AI 未启用</p><p class="note">计数满 1 次或有效保持满 3 秒后可评估；启用后也会自动点评。</p><div id="aiResult" class="note" role="status" style="white-space:pre-wrap"></div>
+</section>
+<details class="panel"><summary>参考模板</summary><div class="controls" style="margin-top:12px"><button id="export" disabled>导出计数模板</button><label class="file">导入计数模板<input id="import" type="file" accept=".json,application/json"></label></div><p class="note">导入模板或刷新页面后，请重新部署模型。</p></details>
+</main>
+<script id="runtime" type="application/octet-stream">__RUNTIME_B64__</script><script id="loader" type="application/octet-stream">__LOADER_B64__</script><script id="wasm" type="application/octet-stream">__WASM_B64__</script><script id="model" type="application/octet-stream">__MODEL_B64__</script><script id="coach" type="application/octet-stream">__COACH_B64__</script><script id="profile" type="application/octet-stream">__PROFILE_B64__</script><script id="holdprofile" type="application/octet-stream">__HOLDPROFILE_B64__</script><script id="engine" type="application/octet-stream">__ENGINE_B64__</script><script id="helper" type="application/octet-stream">__HELPER_B64__</script><script id="worker" type="application/octet-stream">__WORKER_B64__</script><script type="module">
+__CLIENT_SOURCE__
+</script></body></html>

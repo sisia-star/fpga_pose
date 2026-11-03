@@ -1,0 +1,66 @@
+{
+  "old_project_hashes_unchanged": true,
+  "notebook_cells": 3,
+  "notebook_outputs": [
+    "文件检查通过｜卷积版｜8 项运动\n",
+    "FPGA：36 路卷积＋32 路距离｜摄像头：运行\nhttp://192.168.2.99:8081/?v=parallel-ai-conv-20261028\n",
+    "DeepSeek 助手：已连接\n网页 AI 点评：未启用\n电脑卷积助手：已连接\n"
+  ],
+  "version": "parallel-ai-conv-20261028",
+  "camera_running": true,
+  "convolution": {
+    "ready": true,
+    "self_test_passed": true,
+    "error": null,
+    "lanes": 36,
+    "features": 768,
+    "outputs": 195,
+    "calls": 2,
+    "last": {
+      "backend": "fpga-convolution",
+      "hardware_completed": true,
+      "completed_tiles": 6,
+      "hardware_count": 12,
+      "cycles": 787588,
+      "full_call_ms": 13.59989500087977,
+      "calls": 2,
+      "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+    },
+    "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e",
+    "operation": "MediaPipe Lite trained Conv2D(2x2x192 ->195); CPU adds bias after dequantization"
+  },
+  "image": {
+    "ready": true,
+    "backend": "fpga",
+    "pixel_pipeline": "fpga-2x2-box-half-bgrx-v2",
+    "self_test_passed": true,
+    "self_test_sha256": "affa10d59fb1f01d62fa2e6336c0b5647d349aab986f4f2da3de0d046bce8752",
+    "completed_count": 1514,
+    "last_cycles": 258619,
+    "last_processing_ms": 60.8601109997835,
+    "input_width": 640,
+    "input_height": 360,
+    "width": 320,
+    "height": 180,
+    "hardware_id": "0x50494D32",
+    "error": null,
+    "max_width": 1280,
+    "max_height": 720,
+    "timing_scope": "pack + DMA + PL + unpack, excluding capture/JPEG/network"
+  },
+  "pose_relay": {
+    "backend": "mediapipe-lite-split-conv",
+    "relay_connected": true,
+    "busy": false,
+    "error": null,
+    "model": "MediaPipe Lite 33 points"
+  },
+  "deepseek_relay_connected": true,
+  "webpage_title_verified": true,
+  "hardware": {
+    "parallel_lanes": 32,
+    "bitstream_sha256": "64bcd973ed2f3535039bc3145ba3968fd73d79ac389beb27e83ba473b559c9fa",
+    "hwh_sha256": "27ff7e8dc1f73ae30989c2d2527585b643540803e80fb75bee92c6e61e783900",
+    "fclk_mhz": null
+  }
+}

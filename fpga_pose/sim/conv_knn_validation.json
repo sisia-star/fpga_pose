@@ -1,0 +1,108 @@
+{
+  "test_kind": "actual-parallel-pl-eight-model-agreement",
+  "models": {
+    "birddog": {
+      "rows": 1024,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "high_plank": {
+      "rows": 970,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "knee_plank": {
+      "rows": 732,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "squats": {
+      "rows": 214,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "pushups": {
+      "rows": 198,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "situp": {
+      "rows": 162,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "jumping_jacks": {
+      "rows": 296,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    },
+    "pullups": {
+      "rows": 232,
+      "queries_verified": 4,
+      "exact_integer_and_vote_agreement": true
+    }
+  },
+  "queries_verified": 32,
+  "hardware": {
+    "ready": true,
+    "backend": "fpga",
+    "model_id": "90940882214445c3b3c68d589dbf43e5:8:ba4c2a6c06030c89",
+    "inference_count": 32,
+    "last_kernel_ms": 0.0975439998001093,
+    "last_cycles": 3017,
+    "ip_name": "pose_distance_0",
+    "bit_path": "/home/xilinx/jupyter_notebooks/fpga_pose_parallel_ai_20261028/overlays/pose_distance.bit",
+    "error": null,
+    "session_id": "90940882214445c3b3c68d589dbf43e5",
+    "model_hash": "ba4c2a6c06030c89586f9b8099347f30d626d00bff558613050281113e9145f7",
+    "bitstream_sha256": "64bcd973ed2f3535039bc3145ba3968fd73d79ac389beb27e83ba473b559c9fa",
+    "hwh_sha256": "27ff7e8dc1f73ae30989c2d2527585b643540803e80fb75bee92c6e61e783900",
+    "parallel_lanes": 32,
+    "padded_dimensions": 128,
+    "result_selection_backend": "fpga-top5",
+    "fclk0_configured_mhz": 100.0,
+    "pl_compute_ms": 0.030170000000000002,
+    "last_predict_ms": 3.843026999675203,
+    "register_offsets": {
+      "control": 0,
+      "row_count": 4,
+      "train_addr": 8,
+      "train_data": 12,
+      "query_addr": 16,
+      "query_data": 20,
+      "dist_addr": 24,
+      "dist_lo": 28,
+      "dist_hi": 32,
+      "id": 36,
+      "max_rows": 40,
+      "completed_count": 44,
+      "last_cycles": 48,
+      "error": 52,
+      "dimensions": 56,
+      "feature_scale": 60,
+      "parallel_lanes": 64,
+      "top_count": 68,
+      "top_selector": 72,
+      "top_row": 76,
+      "top_lo": 80,
+      "top_hi": 84,
+      "padded_dimensions": 88,
+      "protocol_version": 92
+    },
+    "ip_phys_addr": 1136656384,
+    "busy": false,
+    "fault": false,
+    "error_code": 0,
+    "feature_scale": 2048,
+    "max_rows": 1024,
+    "dimensions": 99,
+    "numeric_format": "signed16-Q4.11",
+    "rounding": "nearest-ties-away-from-zero",
+    "min_feature": -16.0,
+    "max_feature": 15.99951171875,
+    "rows": 232,
+    "feature_spec": "image33-hipcenter-pose2d-v1"
+  },
+  "cloud_api_called": false,
+  "scope": "Stored feature vectors; exact integer/classification agreement. Does not measure live camera recognition accuracy or exercise counting accuracy."
+}

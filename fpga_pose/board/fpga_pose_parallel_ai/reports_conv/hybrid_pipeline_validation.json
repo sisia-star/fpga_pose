@@ -1,0 +1,22 @@
+{
+  "test_scope": "Public reference image through real PC-prefix/board-convolution RPC. No exercise session or counter started. Fresh camera sequence is a protocol freshness check, not a claim that reference image came from live camera.",
+  "actual_pl": true,
+  "points": 33,
+  "max_abs_landmark_field_difference_vs_cpu_same_source": 0.00014205740600892192,
+  "whole_rpc_ms": 100.36289999698056,
+  "convolution": {
+    "backend": "fpga-convolution",
+    "hardware_completed": true,
+    "completed_tiles": 6,
+    "hardware_count": 12,
+    "cycles": 787588,
+    "full_call_ms": 13.59989500087977,
+    "calls": 2,
+    "model_sha256": "5bea8e9f5ee0fb6e3d9bbddad1500ee59664a1334cd2b426d0250b42a6c8b35e"
+  },
+  "live_camera_advanced": true,
+  "cpu_reference_scope": "Original full landmark model includes unused branches; no end-to-end speedup ratio is inferred.",
+  "deepseek_relay_connected": true,
+  "conv_relay_connected": true,
+  "accuracy_limit": "One public sample numerical check, not eight-exercise human accuracy validation."
+}

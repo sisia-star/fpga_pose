@@ -1,0 +1,57 @@
+{
+  "device": "xc7z020clg400-1",
+  "design": "pose_system_wrapper",
+  "stage": "post-route",
+  "resources": {
+    "LUT": {
+      "used": 8130.0,
+      "available": 53200.0,
+      "percent": 15.28
+    },
+    "FF": {
+      "used": 7875.0,
+      "available": 106400.0,
+      "percent": 7.4
+    },
+    "Slice": {
+      "used": 3196.0,
+      "available": 13300.0,
+      "percent": 24.03
+    },
+    "BRAM_36Kb_equivalent": {
+      "used": 91.0,
+      "available": 140.0,
+      "percent": 65.0
+    },
+    "DSP": {
+      "used": 132.0,
+      "available": 220.0,
+      "percent": 60.0
+    },
+    "BUFGCTRL": {
+      "used": 1.0,
+      "available": 32.0,
+      "percent": 3.13
+    }
+  },
+  "timing": {
+    "WNS_ns": 0.434,
+    "TNS_ns": 0.0,
+    "WHS_ns": 0.013,
+    "THS_ns": 0.0,
+    "WPWS_ns": 3.75,
+    "TPWS_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "hold_failing_endpoints": 0,
+    "pulse_failing_endpoints": 0,
+    "clock_period_ns": 10,
+    "configured_frequency_mhz": 100,
+    "all_user_constraints_met": true
+  },
+  "drc": {
+    "Error": 0,
+    "Warning": 305,
+    "Advisory": 8
+  },
+  "build": "D:\\FPGA_AI1\\fpga_pose_parallel_ai_20261028\\build\\run_20261028_203021"
+}

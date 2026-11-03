@@ -1,0 +1,125 @@
+{
+  "schema": "pose-image-register-map-v2",
+  "vlnv": "pose.local:pose:pose_image_preprocess_axi:1.0",
+  "instance": "image_preprocess_0",
+  "control_interface": "S_AXI",
+  "phys_addr": 1136721920,
+  "addr_range": 65536,
+  "data_width": 32,
+  "address_width": 12,
+  "byte_order": "little-endian",
+  "input_format": "uint32 BGRX: B bits7:0, G bits15:8, R bits23:16, ignored high byte",
+  "output_format": "uint32 BGRX with high byte 0",
+  "kernel": "Non-overlapping 2x2 box filter per channel: (sum+2)>>2",
+  "geometry": "Output width/2 by height/2, raster order, no crop",
+  "packet": "AXI stream TKEEP=0xf. TLAST only on final pixel of full input/output frame, not line endings.",
+  "registers": [
+    {
+      "name": "CTRL",
+      "offset": 0,
+      "offset_hex": "0x0",
+      "access": "RW",
+      "description": "Write 1 starts; write 4 aborts/clears. Read bits busy0/done1/idle2/fault3."
+    },
+    {
+      "name": "WIDTH",
+      "offset": 4,
+      "offset_hex": "0x4",
+      "access": "RW",
+      "description": "Even input pixel width, 2..1280."
+    },
+    {
+      "name": "HEIGHT",
+      "offset": 8,
+      "offset_hex": "0x8",
+      "access": "RW",
+      "description": "Even input pixel height, 2..720."
+    },
+    {
+      "name": "ID",
+      "offset": 12,
+      "offset_hex": "0xc",
+      "access": "RO",
+      "description": "Constant 0x50494d32."
+    },
+    {
+      "name": "INPUT_COUNT",
+      "offset": 16,
+      "offset_hex": "0x10",
+      "access": "RO",
+      "description": "Accepted input pixels in current/last frame."
+    },
+    {
+      "name": "OUTPUT_COUNT",
+      "offset": 20,
+      "offset_hex": "0x14",
+      "access": "RO",
+      "description": "Transferred output pixels in current/last frame."
+    },
+    {
+      "name": "LAST_CYCLES",
+      "offset": 24,
+      "offset_hex": "0x18",
+      "access": "RO",
+      "description": "Cycles through final output handshake, includes stream stalls."
+    },
+    {
+      "name": "COMPLETED_COUNT",
+      "offset": 28,
+      "offset_hex": "0x1c",
+      "access": "RO",
+      "description": "Successful final output TLAST handshakes; uint32 wraps."
+    },
+    {
+      "name": "ERROR",
+      "offset": 32,
+      "offset_hex": "0x20",
+      "access": "RO",
+      "description": "Latched error; valid start or clear resets."
+    },
+    {
+      "name": "MAX_WIDTH",
+      "offset": 36,
+      "offset_hex": "0x24",
+      "access": "RO",
+      "description": "Constant 1280."
+    },
+    {
+      "name": "MAX_HEIGHT",
+      "offset": 40,
+      "offset_hex": "0x28",
+      "access": "RO",
+      "description": "Constant 720."
+    }
+  ],
+  "error_codes": {
+    "0": "OK",
+    "1": "Invalid dimensions",
+    "2": "Busy configuration/start rejected and frame aborted",
+    "3": "Early input TLAST",
+    "4": "Expected final input pixel has no TLAST (overrun)",
+    "5": "Input TKEEP is not 0xf",
+    "6": "Unknown/read-only write register",
+    "7": "Unaligned register address"
+  },
+  "dma": {
+    "instance": "image_dma_0",
+    "phys_addr": 1077936128,
+    "mode": "simple, no SG, no micro DMA",
+    "memory_width": 64,
+    "stream_width": 32,
+    "length_bits": 23,
+    "input_bytes": "width*height*4",
+    "output_bytes": "width*height",
+    "port": "PS HP0 DDR, 512 MiB address range",
+    "interrupts": "Unconnected, software polls with timeout"
+  },
+  "notes": [
+    "Source contract only: this JSON is not a real HWH or evidence of successful synthesis.",
+    "Arm output S2MM before starting input MM2S. Buffers must be DMA-capable and aligned to 8 bytes because DRE is disabled.",
+    "One input pixel per clock when unstalled; all B/G/R channels computed together. No array reset. Actual Fmax/resources need Vivado reports.",
+    "completed_count increases only once final output pixel is transferred. Merely starting DMA does not count.",
+    "Protocol faults abort image output; a partial S2MM transfer may stay pending. Software must reset DMA after a bounded timeout and clear/reload image core before retry.",
+    "CTRL clear cancels current frame, clears frame counts/status, preserves cumulative completed_count."
+  ]
+}

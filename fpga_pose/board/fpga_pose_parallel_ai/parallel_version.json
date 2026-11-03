@@ -1,0 +1,15 @@
+{
+  "project": "fpga_pose_parallel_ai_20261028",
+  "baseline": "fpga_pose_training_20261025",
+  "protocol_version": 2,
+  "hardware_magic": "0x504B5032",
+  "lanes": 32,
+  "dimensions": 99,
+  "padded_dimensions": 128,
+  "knn_selection": "PL stable top5; PS voting and rejection",
+  "mediapipe": "Computer Lite detector/prefix/postprocessing; true landmark Conv2D weighted sum on PL; dequantization/bias on PYNQ PS",
+  "deepseek": "existing paired relay protocol; no secret in project",
+  "project_version": "parallel-ai-conv-20261028",
+  "convolution_lanes": 36,
+  "historical_reports": "reports/ contains pre-convolution parallel measurements; current reports are reports_conv/"
+}

@@ -1,0 +1,45 @@
+{
+  "source_sha256": "ad6cfd3c903eb31a4ee788b809e45ecf9fa69923b69b9f3f2d9ae616ff433e58",
+  "removed_output_tensor": 309,
+  "prefix_output_tensors": [
+    308,
+    315,
+    283
+  ],
+  "input_shape": [
+    1,
+    2,
+    2,
+    192
+  ],
+  "conv_weights_shape": [
+    195,
+    2,
+    2,
+    192
+  ],
+  "stride": [
+    1,
+    1
+  ],
+  "padding": "VALID",
+  "macs": 149760,
+  "bias_location": "PYNQ PS after PL accumulator dequantization",
+  "feature_format": "signed16 dynamic power-of-two per query",
+  "weight_format": "signed16 per-output power-of-two",
+  "checks": [
+    {
+      "float_split_max_abs": 0.001052059831636143,
+      "quantized_head_max_abs": 0.05376434326171875
+    },
+    {
+      "float_split_max_abs": 0.004382618212673606,
+      "quantized_head_max_abs": 0.06483650207519531
+    },
+    {
+      "float_split_max_abs": 0.0017648447762894648,
+      "quantized_head_max_abs": 0.05926704406738281
+    }
+  ],
+  "note": "Same MediaPipe Lite model, actual keypoint convolution removed from CPU graph. Synthetic numerical checks are not camera accuracy tests."
+}
